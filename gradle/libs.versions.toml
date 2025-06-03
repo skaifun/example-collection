@@ -1,7 +1,13 @@
 [versions]
 jakarta-servlet-api = "6.1.0"
 springframework = "6.2.7"
+springboot = "3.5.0"
 
 [libraries]
 jakarta-servlet = { group = "jakarta.servlet", name = "jakarta.servlet-api", version.ref = "jakarta-servlet-api" }
 spring-webmvc = { group = "org.springframework", name = "spring-webmvc", version.ref = "springframework" }
+spring-boot-bom = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springboot" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-boot-starter-websocket = { module = "org.springframework.boot:spring-boot-starter-websocket" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+junit-platform = { module = "org.junit.platform:junit-platform-launcher" }
