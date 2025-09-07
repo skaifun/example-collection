@@ -1,7 +1,7 @@
 [versions]
 jakarta-servlet-api = "6.1.0"
-springframework = "6.2.7"
-springboot = "3.5.0"
+springframework = "6.2.10"
+springboot = "3.5.5"
 
 [libraries]
 jakarta-servlet = { group = "jakarta.servlet", name = "jakarta.servlet-api", version.ref = "jakarta-servlet-api" }
