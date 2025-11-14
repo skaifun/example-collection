@@ -1,6 +1,11 @@
 plugins {
-    id("conventions.java")
-    id("conventions.test")
+    java
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
 }
 
 dependencies {
@@ -9,4 +14,8 @@ dependencies {
     implementation(libs.spring.boot.starter.websocket)
     testImplementation(libs.spring.boot.starter.test)
     testRuntimeOnly(libs.junit.platform)
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }

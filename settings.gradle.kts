@@ -6,7 +6,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "examples"
-includeBuild("build-logic")
 
 include("servlet-examples:servlet-using-xml")
 include("servlet-examples:servlet-using-annotation")
