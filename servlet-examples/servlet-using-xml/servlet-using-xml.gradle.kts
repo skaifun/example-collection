@@ -9,8 +9,8 @@ java {
 }
 
 dependencies {
-    compileOnly(libs.jakarta.servlet)
-    implementation(libs.spring.webmvc)
+    compileOnly("jakarta.servlet:jakarta.servlet-api")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks.withType<Test> {
