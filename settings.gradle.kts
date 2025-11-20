@@ -14,6 +14,7 @@ include("servlet-examples:servlet-using-xml-with-springmvc")
 include("servlet-examples:servlet-using-java-with-springmvc")
 
 include("springboot-with-websocket-using-handler")
+include("springboot-integration-tests")
 
 rootProject.children.forEach { child ->
     child.buildFileName = "${child.name}.gradle.kts"

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: springboot-integration-tests
+  jpa:
+    open-in-view: false
+  mvc:
+    problemdetails:
+      enabled: true
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+    database-change-log-table: db_changelog
+    database-change-log-lock-table: db_changelog_lock
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/java-examples
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
