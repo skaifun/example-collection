@@ -30,3 +30,30 @@
 - **JUnit 5** - 测试框架
 - **AssertJ** - 流式断言库
 - **Spring Security Test** - 安全测试支持
+
+## 测试
+
+### 前提条件
+
+1. **Java 21**
+2. **Docker Desktop**（Testcontainers 需要）
+3. **Gradle**（使用项目自带的 Gradle Wrapper）
+
+### 运行测试
+
+```bash
+# 启动 Docker Desktop（必须）
+./gradlew :springboot-integration-tests:test
+```
+
+### 查看测试报告
+
+```bash
+open springboot-integration-tests/build/reports/tests/test/index.html
+```
+
+## 相关链接
+
+- [Spring Boot Testing 官方文档](https://docs.spring.io/spring-boot/reference/testing/index.html)
+- [Testcontainers 官方文档](https://www.testcontainers.org/)
+- [AssertJ 文档](https://assertj.github.io/doc/)
