@@ -7,7 +7,7 @@ javaPlatform {
 }
 
 dependencies {
-    api(platform("org.springframework.boot:spring-boot-dependencies:3.5.7"))
+    api(platform("org.springframework.boot:spring-boot-dependencies:3.5.16"))
 
     constraints {
         api("jakarta.servlet:jakarta.servlet-api:6.1.0")
